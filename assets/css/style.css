@@ -12,24 +12,79 @@ body{
 header{
     height: 75px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #FFFFFF;
-    padding: 0 70px;
+    /* padding: 0 80px; */
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header nav ul{
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 header nav ul li a{
     font-size: 20px;
     color: #89939E;
 }
 header nav ul li a#register_btn{
-    background-color: #28CB8B;
+    background-color: #43A046;
     color: #fff;
+    display: inline-flex;
+    align-items: center;
     padding: 10px 20px;
+    border-radius: 5px;
 }
-header nav ul li a#register_btn::after{
-   
+header nav ul li a#register_btn i{
+    color: white;
+    padding-left: 10px;
 }
+/* ========= Hum Burgger Start ========== */
+header nav .hum-burgger{
+    display: none;
+}
+header nav .hum-burgger i{
+    font-size: 25px;
+    background-color: #43A046;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* ========= Hum Burgger Close ========== */
+/* ============ responsive Header for Mobile =========== */
+/* For 1024px Screen */
+@media (max-width:1024px) {
+    header nav ul{
+        gap: 20px;
+    }
+    header nav ul li a{
+        font-size: 18px;
+    }
+    header nav ul li a#register_btn{
+        padding: 10px;
+    }
+}
+/* For 768px Screen */
+@media (max-width:768px) {
+    header nav ul{
+        flex-direction: column;
+        width: 100%;
+        background-color: #F5F7FA;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        padding: 20px 0;
+        z-index: -1;
+        transform: translateY(-100%);
+    }
+    header nav .hum-burgger{
+        display: block;
+    }
+}
+

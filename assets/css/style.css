@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #F5F7FA;
+    scroll-behavior: smooth;
+}
+header{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0 70px;
+}
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+header nav ul li a{
+    font-size: 20px;
+    color: #89939E;
+}
+header nav ul li a#register_btn{
+    background-color: #28CB8B;
+    color: #fff;
+    padding: 10px 20px;
+}
+header nav ul li a#register_btn::after{
+   
+}
